@@ -1,0 +1,26 @@
+.site-list__anchor {
+  color: $basic-white;
+
+  @media (max-width: $desktop-width) {
+    margin: 0;
+    margin-right: auto;
+    text-align: left;
+    color: #48494D;
+    font-size: 20px;
+  }
+}
+
+.site-list__item {
+  @media (max-width:$desktop-width) {
+    background-color: #F6F6F6;
+    width: 100%;
+    margin-top: 0;
+    margin-right: auto;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 17px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    position: relative;
+  }
+}

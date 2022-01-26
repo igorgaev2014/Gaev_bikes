@@ -1,0 +1,146 @@
+.main-nav {
+  border-bottom: 2px solid rgba($basic-white, 0.2);
+  padding: 0 10px;
+  margin-bottom: 255px;
+  grid-column: 1 / 3;
+
+  @media (max-width: $desktop-width) {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+}
+
+.main-nav__list {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  font-weight: 400;
+  padding: 0 14px;
+  font-size: 16px;
+  line-height: 32px;
+  padding-top: 21px;
+  padding-bottom: 8px;
+  opacity: 0.7;
+  font-weight: 300;
+}
+
+.main-nav__list--closed {
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav__list--opened {
+  @media (max-width: $desktop-width) {
+    padding: 0;
+    padding-top: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: start;
+    z-index: 15;
+    background-color: $basic-white;
+    opacity: 1;
+    color: $site-list-item;
+  }
+}
+
+.main-nav__button {
+  display: none;
+  background: $basic-green;
+
+  @media (max-width:$desktop-width) {
+    display: block;
+    z-index: 16;
+    position: absolute;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.main-nav__toggle--closed {
+  display: none;
+
+  @media (max-width:$desktop-width) {
+    display: block;
+    width: 22px;
+    height: 1px;
+    background-color: $basic-black;
+    z-index: 12;
+    position: absolute;
+    top: 25px;
+    left: 14px;
+    right: 0;
+    bottom: 0;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -6px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 22px;
+    height: 1px;
+    z-index: 12;
+    background-color: $basic-black;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 6px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 22px;
+    height: 1px;
+    z-index: 12;
+    background-color: $basic-black;
+  }
+}
+
+.main-nav__toggle--opened {
+  display: none;
+
+
+  @media (max-width:$desktop-width) {
+    display: block;
+    width: 22px;
+    height: 1px;
+    background-color: rgba(#141517, 0.2);
+    z-index: 12;
+    position: absolute;
+    top: 25px;
+    left: 14px;
+    right: 0;
+    bottom: 0;
+    transform: rotate(-45deg);
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 22px;
+    height: 1px;
+    z-index: 12;
+    transform: rotate(90deg);
+    background-color: rgba(#141517, 0.2);
+  }
+}
