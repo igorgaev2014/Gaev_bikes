@@ -14,7 +14,6 @@
 
 .main-nav__list {
   display: flex;
-  position: relative;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
@@ -38,11 +37,28 @@
   @media (max-width: $desktop-width) {
     padding: 0;
     padding-top: 100px;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: start;
+    z-index: 15;
+    background-color: $basic-white;
+    opacity: 1;
+    color: $site-list-item;
+  }
+}
+
+.main-nav__list--nojs {
+  @media (max-width: $desktop-width) {
+    display: flex;
+    padding: 0;
+    padding-top: 20px;
+    margin: 0;
+    position: relative;
+    width: 100%;
     flex-direction: column;
     justify-content: start;
     z-index: 15;
@@ -54,7 +70,6 @@
 
 .main-nav__button {
   display: none;
-  background: $basic-green;
 
   @media (max-width:$desktop-width) {
     display: block;
@@ -63,26 +78,42 @@
     right: 0;
     width: 50px;
     height: 50px;
-    outline: none;
     border: none;
     cursor: pointer;
   }
 }
 
-.main-nav__toggle--closed {
+.main-nav__button--closed {
+  background: $basic-green;
+}
+
+.main-nav__button--opened {
+  background: transparent;
+}
+
+.main-nav__button--nojs {
+  display: none;
+}
+
+.main-nav__toggle {
   display: none;
 
-  @media (max-width:$desktop-width) {
+  @media (max-width: $desktop-width) {
     display: block;
-    width: 22px;
-    height: 1px;
-    background-color: $basic-black;
-    z-index: 12;
     position: absolute;
-    top: 25px;
-    left: 14px;
+    z-index: 12;
     right: 0;
     bottom: 0;
+    height: 1px;
+  }
+}
+
+.main-nav__toggle--closed {
+  @media (max-width: $desktop-width) {
+    width: 22px;
+    background-color: $basic-black;
+    top: 25px;
+    left: 14px;
   }
 
   &::before {
@@ -113,20 +144,11 @@
 }
 
 .main-nav__toggle--opened {
-  display: none;
-
-
-  @media (max-width:$desktop-width) {
-    display: block;
-    width: 22px;
-    height: 1px;
+  @media (max-width: $desktop-width) {
+    width: 30px;
     background-color: rgba(#141517, 0.2);
-    z-index: 12;
-    position: absolute;
     top: 25px;
-    left: 14px;
-    right: 0;
-    bottom: 0;
+    left: 10px;
     transform: rotate(-45deg);
   }
 
@@ -137,7 +159,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    width: 22px;
+    width: 30px;
     height: 1px;
     z-index: 12;
     transform: rotate(90deg);

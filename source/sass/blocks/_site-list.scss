@@ -7,6 +7,21 @@
     text-align: left;
     color: #48494D;
     font-size: 20px;
+    width: 100%;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/arrow-right.svg");
+      background-repeat: no-repeat;
+      z-index: 20;
+      background-size: contain;
+      top: 3px;
+      right: 20px;
+      width: 12px;
+      height: 12px;
+    }
   }
 }
 
@@ -14,13 +29,16 @@
   @media (max-width:$desktop-width) {
     background-color: #F6F6F6;
     width: 100%;
-    margin-top: 0;
+    margin-top: 1px;
     margin-right: auto;
     padding-top: 17px;
     padding-bottom: 17px;
     padding-left: 17px;
-    margin-bottom: 30px;
+    margin-bottom: 34px;
     font-weight: 400;
     position: relative;
+    line-height: 140%;
+    position: relative;
+    display: flex;
   }
 }
