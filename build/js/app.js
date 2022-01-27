@@ -2,7 +2,6 @@
 var navList = document.querySelector('.main-nav__list');
 var navButton = document.querySelector('.main-nav__button');
 var navToggle = document.querySelector('.main-nav__toggle');
-var navList = document.querySelector('.main-nav__list');
 
 navButton.classList.remove('main-nav__button--nojs');
 navList.classList.remove('main-nav__list--nojs');
