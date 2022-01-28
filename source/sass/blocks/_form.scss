@@ -1,3 +1,20 @@
+.form {
+  margin: 0;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 327px;
+  text-align: center;
+
+  @media (max-width: $desktop-width) {
+    margin: 0 auto;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 0 16px;
+  }
+}
+
 .form__description {
   margin: 0;
   padding: 0;
