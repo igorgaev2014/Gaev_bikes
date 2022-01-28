@@ -1,0 +1,50 @@
+.video {
+  text-align: center;
+  background-color: $basic-dark-grey;
+  color: $basic-white;
+  padding-top: 122px;
+  padding-bottom: 425px;
+  position: relative;
+}
+
+.video__title {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.video__description {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  margin: 0 auto;
+  margin-bottom: 56px;
+  color: rgba($basic-white, 0.7);
+  display: flex;
+  max-width: 340px;
+}
+
+.video__popup {
+  display: flex;
+  margin: 0 auto;
+  width: 929px;
+  height: 522px;
+  background-image: url("../img/content/bike-video@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  min-height: 414px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 544px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video__link {
+  cursor: pointer;
+}
