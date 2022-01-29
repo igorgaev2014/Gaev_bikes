@@ -67,6 +67,8 @@
   margin-bottom: 13px;
   z-index: 18;
   position: relative;
+  width: 100%;
+  border-radius: 10px;
 }
 
 .categories__item {
@@ -120,6 +122,11 @@
 .categories__item:last-child {
   @media (max-width:$desktop-width) {
     margin: 0 auto;
+    flex: 0 1 46.6%;
+  }
+
+  @media (max-width:$tablet-width) {
+    flex: 1 1 270px;
   }
 }
 

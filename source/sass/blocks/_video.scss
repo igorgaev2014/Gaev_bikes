@@ -31,7 +31,7 @@
   margin: 0 auto;
   width: 929px;
   height: 522px;
-  background-image: url("../img/content/bike-video@1x.jpg");
+  background-image: url("../img/bike-video@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -43,6 +43,10 @@
   top: 544px;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bike-video@2x.jpg");
+  }
 }
 
 .video__link {
