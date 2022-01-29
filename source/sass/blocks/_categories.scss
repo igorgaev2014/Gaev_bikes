@@ -78,6 +78,10 @@
   flex: 1 1 270px;
   justify-self: center;
 
+  &:hover {
+    opacity: 0.9;
+  }
+
   @media (max-width:$desktop-width) {
     margin-bottom: 58px;
   }

@@ -51,6 +51,14 @@
   border-radius: 6px;
   border: none;
 
+  &:hover {
+    opacity: 0.95;
+  }
+
+  &:invalid {
+    outline: 2px solid $status-error;
+  }
+
   @media (max-width:$desktop-width) {
     border: 1px solid $input-grey2;
     max-width: 320px;
@@ -81,6 +89,10 @@
   border: none;
   border-radius: 6px;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.95;
+  }
 
   @media (max-width:$desktop-width) {
     max-width: 320px;

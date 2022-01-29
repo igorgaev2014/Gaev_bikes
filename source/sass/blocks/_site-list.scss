@@ -1,6 +1,10 @@
 .site-list__anchor {
   color: $basic-white;
 
+  &:hover {
+    opacity: 0.5;
+  }
+
   @media (max-width: $desktop-width) {
     margin: 0;
     margin-right: auto;
