@@ -38,14 +38,13 @@
     padding: 0;
     padding-top: 100px;
     position: fixed;
-    overflow-y: scroll;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
     flex-direction: column;
     justify-content: flex-start;
-    z-index: 15;
+    z-index: 999;
     background-color: $basic-white;
     opacity: 1;
     color: $site-list-item;
@@ -74,7 +73,7 @@
 
   @media (max-width:$desktop-width) {
     display: block;
-    z-index: 16;
+    z-index: 1000;
     position: absolute;
     right: 0;
     width: 50px;
@@ -90,6 +89,7 @@
 
 .main-nav__button--opened {
   background: transparent;
+  position: fixed;
 }
 
 .main-nav__button--nojs {
