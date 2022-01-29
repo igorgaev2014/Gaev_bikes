@@ -7,11 +7,12 @@
   @media (max-width:$desktop-width) {
     margin-top: -42px;
     padding-top: 49px;
+    padding-bottom: 68px;
   }
 
   @media (max-width:$tablet-width) {
     margin-top: -29px;
-    padding-bottom: 53px;
+    padding-bottom: 55px;
   }
 }
 
@@ -82,6 +83,10 @@
     opacity: 0.9;
   }
 
+  &:active {
+    opacity: 0.8;
+  }
+
   @media (max-width:$desktop-width) {
     margin-bottom: 58px;
   }
@@ -126,7 +131,7 @@
 .categories__item:last-child {
   @media (max-width:$desktop-width) {
     margin: 0 auto;
-    flex: 0 1 46.6%;
+    flex: 0 1 45.9%;
   }
 
   @media (max-width:$tablet-width) {

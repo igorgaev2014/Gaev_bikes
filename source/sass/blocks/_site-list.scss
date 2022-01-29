@@ -2,7 +2,11 @@
   color: $basic-white;
 
   &:hover {
-    opacity: 0.5;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.4;
   }
 
   @media (max-width: $desktop-width) {

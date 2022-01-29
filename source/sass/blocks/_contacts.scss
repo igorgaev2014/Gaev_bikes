@@ -47,6 +47,10 @@
   cursor: pointer;
 
   &:hover {
+    opacity: 0.9;
+  }
+
+  &:active {
     opacity: 0.8;
   }
 
@@ -91,6 +95,10 @@
     opacity: 0.7;
   }
 
+  &:active {
+    opacity: 0.5;
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -102,7 +110,6 @@
     background-size: cover;
     background-position: center;
   }
-
 }
 
 .contacts__mail {

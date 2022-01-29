@@ -1,4 +1,12 @@
 .page-footer {
   padding-top: 248px;
   padding-bottom: 96px;
+
+  @media (max-width:$desktop-width) {
+    padding-top: 156px;
+  }
+
+  @media (max-width:$tablet-width) {
+    padding-top: 119px;
+  }
 }
