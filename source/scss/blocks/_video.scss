@@ -2,13 +2,14 @@
   text-align: center;
   background-color: $basic-dark-grey;
   color: $basic-white;
-  padding-top: 122px;
+  padding-top: 121px;
   padding-bottom: 425px;
   position: relative;
+  letter-spacing: -0.1px;
 
   @media (max-width:$desktop-width) {
-    padding-top: 71px;
-    padding-bottom: 179px;
+    padding-top: 70px;
+    padding-bottom: 183px;
   }
 
   @media (max-width:$tablet-width) {
@@ -34,7 +35,7 @@
   line-height: 28px;
   font-weight: 300;
   margin: 0 auto;
-  margin-bottom: 56px;
+  margin-bottom: 54px;
   color: rgba($basic-white, 0.7);
   display: flex;
   max-width: 340px;
@@ -46,6 +47,7 @@
   @media (max-width:$tablet-width) {
     padding-left: 15px;
     padding-right: 15px;
+    margin-bottom: 56px;
   }
 }
 
@@ -89,7 +91,6 @@
 }
 
 .video__play {
-
   &:hover {
     opacity: 0.9;
   }
@@ -101,10 +102,12 @@
   @media (max-width:$desktop-width) {
     width: 90px;
     height: 90px;
+    margin-top: 6px;
   }
 
   @media (max-width:$tablet-width) {
     width: 65px;
     height: 65px;
+    margin-top: 3px;
   }
 }
