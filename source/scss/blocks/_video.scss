@@ -1,32 +1,28 @@
 .video {
   text-align: center;
-  background-color: $basic-dark-grey;
   color: $basic-white;
-  padding-top: 121px;
-  padding-bottom: 425px;
+  padding-top: 120px;
   position: relative;
   letter-spacing: -0.1px;
+  background: linear-gradient(to bottom, $basic-dark-grey 87.8%, $basic-white 87.8%);
 
   @media (max-width: $desktop-width) {
-    padding-top: 70px;
-    padding-bottom: 183px;
+    padding-top: 64px;
+    padding-bottom: 0;
+    background: linear-gradient(to bottom, $basic-dark-grey 83%, $basic-white 83%);
   }
 
   @media (max-width: $tablet-width) {
-    padding-top: 84px;
-    padding-bottom: 110px;
+    padding-top: 78px;
+    padding-bottom: 28px;
   }
 }
 
 .video__title {
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: 600;
-  margin: 0;
   margin-bottom: 20px;
 
   @media (max-width: $desktop-width) {
-    font-size: 24px;
+    margin-bottom: 15px;
   }
 }
 
@@ -35,13 +31,14 @@
   line-height: 28px;
   font-weight: 300;
   margin: 0 auto;
-  margin-bottom: 54px;
+  margin-bottom: 56px;
   color: rgba($basic-white, 0.7);
   display: flex;
   max-width: 340px;
 
   @media (max-width: $desktop-width) {
     max-width: 430px;
+    margin-bottom: 40px;
   }
 
   @media (max-width: $tablet-width) {
@@ -63,10 +60,6 @@
   background-position: top center;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  top: 544px;
-  left: 50%;
-  transform: translate(-50%, -50%);
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/bike-video@2x.jpg");
@@ -90,6 +83,8 @@
 }
 
 .video__play {
+  margin-top: 6px;
+
   &:hover {
     opacity: 0.9;
   }

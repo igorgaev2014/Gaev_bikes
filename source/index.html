@@ -19,7 +19,7 @@
           <span class="main-nav__toggle main-nav__toggle--closed"></span>
           <span class="visually-hidden">Закрыть меню</span>
         </button>
-        <ul class="main-nav__list main-nav__list--nojs main-nav__list--closed site-list">
+        <ul class="main-nav__list main-nav__list--nojs main-nav__list--closed site-list list-reset">
           <li class="site-list__item"><a href="#about" class="site-list__anchor">О нас</a></li>
           <li class="site-list__item"><a href="#categories" class="site-list__anchor">Виды велосипедов</a></li>
           <li class="site-list__item"><a href="#video" class="site-list__anchor">Видео про велосипеды</a></li>
@@ -44,7 +44,7 @@
       </div>
       <form class="page-header__form form" action="https://echo.htmlacademy.ru" method="get">
         <p class="form__description">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-        <ul class="form__list">
+        <ul class="form__list list-reset">
           <li class="form__item">
             <label class="visually-hidden" for="name">Введите Ваше Имя</label>
             <input type="text" id="name" name="name" placeholder="Введите Ваше Имя" required>
@@ -60,8 +60,8 @@
   </header>
   <main class="page-main">
     <section class="about" id="about">
-      <h2 class="about__title">Несколько фактов о нас</h2>
-      <ul class="about__list">
+      <h2 class="about__title title">Несколько фактов о нас</h2>
+      <ul class="about__list list-reset">
         <li class="about__item">
           <p class="about__number">01</p>
           <p class="about__description">Самый широкий выбор велосипедов!</p>
@@ -81,8 +81,8 @@
       </ul>
     </section>
     <section class="categories" id="categories">
-      <h2 class="categories__title">Виды велосипедов</h2>
-      <ul class="categories__list">
+      <h2 class="categories__title title">Виды велосипедов</h2>
+      <ul class="categories__list list-reset">
         <li class="categories__item">
           <a href="#" class="categories__link">
             <picture>
@@ -125,7 +125,7 @@
       </ul>
     </section>
     <section class="video" id="video">
-      <h2 class="video__title">Видео про велосипеды</h2>
+      <h2 class="video__title title">Видео про велосипеды</h2>
       <p class="video__description">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
       <div class="video__popup">
         <a class="video__link" href="https://www.youtube.com/watch?v=5qap5aO4i9A">
@@ -137,28 +137,21 @@
       </div>
     </section>
   </main>
-  <footer class="page-footer">
-    <div class="page-footer__contacts contacts" id="contacts">
-      <h2 class="contacts__title">Как нас найти?</h2>
-      <p class="contacts__description">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
-      <picture>
-        <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/map-tablet@1x.webp 1x, img/content/map-tablet@2x.webp 2x">
-        <source type="image/webp" srcset="img/content/map-desktop@1x.webp 1x, img/content/map-desktop@2x.webp 2x">
-        <!-- 1x: 698px; 2x: 1396px -->
-        <source media="(max-width: 1023px)" srcset="img/content/map-tablet@1x.jpg 1x, img/content/map-tablet@2x.jpg 2x">
-        <!-- 1x: 957px; 2x: 1914px -->
-        <img class="contacts__map" src="./img/content/map-desktop@1x.jpg" srcset="./img/content/map-desktop@2x.jpg 2x"
-          alt="Карта" width="957" height="530">
-      </picture>
-      <ul class="contacts__list">
-        <li class="contacts__item">
-          <a class="contacts__mail" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
-        </li>
-        <li class="contacts__item">
-          <a class="contacts__tel" href="tel:+749978468446">+7 (499) -784-684-46</a>
-        </li>
-      </ul>
-    </div>
+  <footer class="page-footer contacts" id="contacts">
+    <h2 class="contacts__title title">Как нас найти?</h2>
+    <p class="contacts__description">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+    <iframe class="contacts__map-wrapper"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2495.652183161645!2d30.32085335177339!3d59.93871916896514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e1!3m2!1sru!2sus!4v1598017269047!5m2!1sru!2sus"
+    width="957" height="530" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+    </iframe>
+    <ul class="contacts__list list-reset">
+      <li class="contacts__item">
+        <a class="contacts__mail" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+      </li>
+      <li class="contacts__item">
+        <a class="contacts__tel" href="tel:+749978468446">+7 (499) -784-684-46</a>
+      </li>
+    </ul>
   </footer>
   <script type="module" src="./js/main.js"></script>
 </body>
