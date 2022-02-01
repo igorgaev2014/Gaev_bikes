@@ -7,12 +7,12 @@
   position: relative;
   letter-spacing: -0.1px;
 
-  @media (max-width:$desktop-width) {
+  @media (max-width: $desktop-width) {
     padding-top: 70px;
     padding-bottom: 183px;
   }
 
-  @media (max-width:$tablet-width) {
+  @media (max-width: $tablet-width) {
     padding-top: 84px;
     padding-bottom: 110px;
   }
@@ -25,7 +25,7 @@
   margin: 0;
   margin-bottom: 20px;
 
-  @media (max-width:$desktop-width) {
+  @media (max-width: $desktop-width) {
     font-size: 24px;
   }
 }
@@ -40,11 +40,11 @@
   display: flex;
   max-width: 340px;
 
-  @media (max-width:$desktop-width) {
+  @media (max-width: $desktop-width) {
     max-width: 430px;
   }
 
-  @media (max-width:$tablet-width) {
+  @media (max-width: $tablet-width) {
     padding-left: 15px;
     padding-right: 15px;
     margin-bottom: 56px;
@@ -61,7 +61,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-  display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
@@ -73,13 +72,13 @@
     background-image: url("../img/bike-video@2x.jpg");
   }
 
-  @media (max-width:$desktop-width) {
+  @media (max-width: $desktop-width) {
     width: 503px;
     height: 282px;
     top: 357px;
   }
 
-  @media (max-width:$tablet-width) {
+  @media (max-width: $tablet-width) {
     width: 288px;
     height: 161px;
     top: 352px;
@@ -99,13 +98,13 @@
     opacity: 0.8;
   }
 
-  @media (max-width:$desktop-width) {
+  @media (max-width: $desktop-width) {
     width: 90px;
     height: 90px;
     margin-top: 6px;
   }
 
-  @media (max-width:$tablet-width) {
+  @media (max-width: $tablet-width) {
     width: 65px;
     height: 65px;
     margin-top: 3px;

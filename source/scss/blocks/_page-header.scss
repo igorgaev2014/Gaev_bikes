@@ -10,7 +10,7 @@
     background-image: url("../img/bike-bg-desktop@2x.jpg");
   }
 
-  @media (max-width:$desktop-width) {
+  @media (max-width: $desktop-width) {
     background-image: none;
     background-color: $basic-white;
   }
@@ -45,7 +45,7 @@
     }
   }
 
-  @media (max-width:$mobile-width) {
+  @media (max-width: $mobile-width) {
     background-image: url("../img/bike-bg-mobile@1x.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -68,7 +68,7 @@
     top: 15px;
   }
 
-  @media (max-width:$tablet-width) {
+  @media (max-width: $tablet-width) {
     left: 18px;
   }
 }
@@ -94,7 +94,7 @@
     margin-top: 134px;
   }
 
-  @media (max-width:$tablet-width) {
+  @media (max-width: $tablet-width) {
     margin-top: 121px;
   }
 }
@@ -118,7 +118,7 @@
     margin-bottom: 80px;
   }
 
-  @media (max-width:$tablet-width) {
+  @media (max-width: $tablet-width) {
     padding: 0 15px;
     margin-bottom: 69px;
   }

@@ -5,11 +5,11 @@
   max-width: 1205px;
   margin: 0 auto;
 
-  @media (max-width:$desktop-width) {
+  @media (max-width: $desktop-width) {
     padding: 70px 0;
   }
 
-  @media (max-width:$tablet-width) {
+  @media (max-width: $tablet-width) {
     padding-bottom: 35px;
   }
 }
@@ -23,14 +23,14 @@
   margin-bottom: 50px;
   letter-spacing: -0.2px;
 
-  @media (max-width:$desktop-width) {
+  @media (max-width: $desktop-width) {
     font-size: 24px;
     line-height: 41px;
     margin-bottom: 30px;
     letter-spacing: -0.1px;
   }
 
-  @media (max-width:$tablet-width) {
+  @media (max-width: $tablet-width) {
     margin-bottom: 31px;
     letter-spacing: 0.01px;
   }
@@ -40,27 +40,27 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 
-  @media (max-width:$desktop-width) {
+  @media (max-width: $desktop-width) {
     grid-template-columns: 1fr 1fr;
     padding: 0 90px;
   }
 
-  @media (max-width:$tablet-width) {
+  @media (max-width: $tablet-width) {
     padding: 0;
   }
 
 
-  @media (max-width:$tablet-width) {
+  @media (max-width: $tablet-width) {
     grid-template-columns: 1fr;
   }
 }
 
 .about__item {
-  @media (max-width:$desktop-width) {
+  @media (max-width: $desktop-width) {
     margin-bottom: 44px;
   }
 
-  @media (max-width:$tablet-width) {
+  @media (max-width: $tablet-width) {
     grid-column: 1 / 2;
     margin-bottom: 47px;
   }
@@ -76,11 +76,11 @@
   letter-spacing: -1.27px;
   margin-left: -2px;
 
-  @media (max-width:$tablet-width) {
+  @media (max-width: $tablet-width) {
     margin-bottom: 13px;
   }
 
-  @media (max-width:$tablet-width) {
+  @media (max-width: $tablet-width) {
     margin-bottom: 7px;
   }
 }
@@ -93,7 +93,7 @@
   max-width: 262px;
   font-weight: 500;
 
-  @media (max-width:$tablet-width) {
+  @media (max-width: $tablet-width) {
     font-size: 18px;
   }
 }

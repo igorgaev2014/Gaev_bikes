@@ -29,10 +29,10 @@
     margin-top: 70px;
     margin-bottom: 29px;
     color: $basic-black;
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
   }
 
-  @media (max-width:$tablet-width) {
+  @media (max-width: $tablet-width) {
     padding: 0 10px;
     margin-bottom: 20px;
   }
@@ -63,8 +63,8 @@
     outline: 2px solid $status-error;
   }
 
-  @media (max-width:$desktop-width) {
-    border: 1px solid $input-grey2;
+  @media (max-width: $desktop-width) {
+    border: 1px solid $input-grey-2;
     max-width: 320px;
     padding-left: 19px;
     padding-top: 12px;
@@ -104,19 +104,19 @@
     opacity: 0.8;
   }
 
-  @media (max-width:$desktop-width) {
+  @media (max-width: $desktop-width) {
     max-width: 320px;
     margin-top: 1px;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     padding-left: 46px;
     padding-right: 43px;
     margin-left: 3px;
   }
 
-  @media (max-width:$tablet-width) {
+  @media (max-width: $tablet-width) {
     line-height: 21px;
     margin-top: -3px;
-    margin-left: 0px;
+    margin-left: 0;
     padding-left: 28px;
     padding-right: 31px;
     padding-bottom: 16px;

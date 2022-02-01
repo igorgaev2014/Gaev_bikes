@@ -21,9 +21,9 @@ body {
   overflow-x: hidden;
 }
 
-.body-lock {
-  width: 100vw;
+.page__body-lock {
   height: 100vh;
+  overflow: hidden;
 }
 
 a {

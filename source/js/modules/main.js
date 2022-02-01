@@ -17,7 +17,7 @@ function openMenu() {
   navButton.classList.remove('main-nav__button--closed');
   navButton.classList.add('main-nav__button--opened');
 
-  body.classList.add('body-lock');
+  body.classList.add('page__body-lock');
 }
 
 function closeMenu() {
@@ -30,7 +30,7 @@ function closeMenu() {
   navButton.classList.remove('main-nav__button--opened');
   navButton.classList.add('main-nav__button--closed');
 
-  body.classList.remove('body-lock');
+  body.classList.remove('page__body-lock');
 }
 
 navButton.addEventListener('click', function () {
