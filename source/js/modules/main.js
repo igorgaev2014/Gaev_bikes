@@ -1,40 +1,25 @@
 'use strict';
 var body = document.querySelector('body');
-var navList = document.querySelector('.main-nav__list');
-var navButton = document.querySelector('.main-nav__button');
-var navToggle = document.querySelector('.main-nav__toggle');
+var nav = document.querySelector('.main-nav');
+var navButton = nav.querySelector('.main-nav__button');
+var navList = nav.querySelector('.main-nav__list');
 
-navButton.classList.remove('main-nav__button--nojs');
-navList.classList.remove('main-nav__list--nojs');
+body.classList.remove('body--no-js');
 
 function openMenu() {
-  navList.classList.remove('main-nav__list--closed');
-  navList.classList.add('main-nav__list--opened');
-
-  navToggle.classList.remove('main-nav__toggle--closed');
-  navToggle.classList.add('main-nav__toggle--opened');
-
-  navButton.classList.remove('main-nav__button--closed');
-  navButton.classList.add('main-nav__button--opened');
-
+  nav.classList.remove('main-nav--closed');
+  nav.classList.add('main-nav--opened');
   body.classList.add('page__body-lock');
 }
 
 function closeMenu() {
-  navList.classList.remove('main-nav__list--opened');
-  navList.classList.add('main-nav__list--closed');
-
-  navToggle.classList.remove('main-nav__toggle--opened');
-  navToggle.classList.add('main-nav__toggle--closed');
-
-  navButton.classList.remove('main-nav__button--opened');
-  navButton.classList.add('main-nav__button--closed');
-
+  nav.classList.remove('main-nav--opened');
+  nav.classList.add('main-nav--closed');
   body.classList.remove('page__body-lock');
 }
 
 navButton.addEventListener('click', function () {
-  if (navList.classList.contains('main-nav__list--closed')) {
+  if (nav.classList.contains('main-nav--closed')) {
     openMenu();
   } else {
     closeMenu();
