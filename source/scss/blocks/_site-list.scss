@@ -17,8 +17,10 @@
     font-size: 20px;
     width: 100%;
     position: relative;
+  }
 
-    &::before {
+  &::before {
+    @media (max-width: $desktop-width) {
       content: "";
       position: absolute;
       background-image: url("../img/arrow-right.svg");

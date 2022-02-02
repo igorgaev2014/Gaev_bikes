@@ -16,6 +16,9 @@ body {
   font-family: $font-primary;
   font-style: normal;
   min-width: 320px;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 .page__body-lock {

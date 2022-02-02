@@ -28,16 +28,9 @@
       </nav>
       <div class="page-header__info">
         <a class="page-header__anchor">
-          <svg width="68" height="21" viewBox="0 0 68 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13.3636 0V20.0455H10.0705V5.82273L8.97273 7.20682L6.825 9.975L6.72954 10.0705L6.58636 9.975L4.43864 7.20682L3.34091 5.775V20.0455H0V0H3.34091L6.72954 4.29545L10.0705 0H13.3636Z" fill="#0AD9C6"/>
-            <path d="M8.30444 10.0704L8.20898 9.97498L8.30444 10.0704Z" fill="#0AD9C6"/>
-            <path d="M8.44787 9.97498L8.35241 10.0704H8.30469L8.44787 9.97498Z" fill="#0AD9C6"/>
-            <path d="M38.2092 5.61453L29.0823 12.316L31.1955 15.194L40.3224 8.49252L38.2092 5.61453Z" fill="#0AD9C6"/>
-            <path d="M26.6674 3C22.8035 3 19.6243 6.13028 19.6243 10.0431C19.6243 13.9071 22.7546 17.0863 26.6674 17.0863C30.5313 17.0863 33.7105 13.956 33.7105 10.0431C33.7105 6.17919 30.5313 3 26.6674 3ZM26.6674 13.2712C24.8577 13.2712 23.4393 11.8039 23.4393 10.0431C23.4393 8.23344 24.9066 6.81503 26.6674 6.81503C28.4282 6.81503 29.8955 8.28235 29.8955 10.0431C29.8955 11.8039 28.4282 13.2712 26.6674 13.2712Z" fill="#0AD9C6"/>
-            <path d="M43.6396 3C39.7756 3 36.5964 6.13028 36.5964 10.0431C36.5964 13.9071 39.7267 17.0863 43.6396 17.0863C47.5035 17.0863 50.6827 13.956 50.6827 10.0431C50.6338 6.17919 47.5035 3 43.6396 3ZM43.6396 13.2712C41.8299 13.2712 40.4115 11.8039 40.4115 10.0431C40.4115 8.23344 41.8788 6.81503 43.6396 6.81503C45.4004 6.81503 46.8677 8.28235 46.8677 10.0431C46.8677 11.8039 45.4004 13.2712 43.6396 13.2712Z" fill="#0AD9C6"/>
-            <path d="M67.5977 0.238647V20.2841H64.2568V9.87956L61.4409 7.20683L59.3409 5.15456V20.2841H56V0.238647H59.2932H59.3409L63.2545 4.0091L64.2568 4.96365V0.238647H67.5977Z" fill="#0AD9C6"/>
-            <rect x="37" y="3" width="6" height="4" fill="#0AD9C6"/>
-            </svg>
+          <svg width="68" height="21">
+            <use xlink:href="img/sprite.svg#logo"></use>
+          </svg>
         </a>
         <h1 class="page-header__title">Мы продаем велосипеды</h1>
         <p class="page-header__description">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
@@ -51,7 +44,7 @@
           </li>
           <li class="form__item">
             <label class="visually-hidden" for="tel">Введите Ваш номер телефона</label>
-            <input type="tel" id="tel" name="tel" placeholder="Введите Ваш номер телефона" required pattern="^[0-9\-\+]{9,15}$">
+            <input type="tel" id="tel" name="tel" placeholder="Введите Ваш номер телефона" required>
           </li>
         </ul>
         <button class="form__button" type="submit">Подобрать велосипед мечты</button>
@@ -60,64 +53,51 @@
   </header>
   <main class="page-main">
     <section class="about" id="about">
-      <h2 class="about__title title">Несколько фактов о нас</h2>
-      <ul class="about__list list-reset">
-        <li class="about__item">
-          <p class="about__number">01</p>
+      <h2 class="title">Несколько фактов о нас</h2>
+      <ul class="list-reset">
+        <li>
           <p class="about__description">Самый широкий выбор велосипедов!</p>
         </li>
-        <li class="about__item">
-          <p class="about__number">02</p>
+        <li>
           <p class="about__description">Доставка велосипедов по всей России!</p>
         </li>
-        <li class="about__item">
-          <p class="about__number">03</p>
+        <li>
           <p class="about__description">Большой выбор крутых аксессуаров!</p>
         </li>
-        <li class="about__item">
-          <p class="about__number">04</p>
+        <li>
           <p class="about__description">Профессиональные консультации!</p>
         </li>
       </ul>
     </section>
     <section class="categories" id="categories">
-      <h2 class="categories__title title">Виды велосипедов</h2>
-      <ul class="categories__list list-reset">
-        <li class="categories__item">
-          <a href="#" class="categories__link">
+      <h2 class="title">Виды велосипедов</h2>
+      <ul class="list-reset">
+        <li>
+          <a href="#">
             <picture>
-              <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/road-bike-tablet@1x.webp 1x, img/content/road-bike-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/content/road-bike-desktop@1x.webp 1x, img/content/road-bike-desktop@2x.webp 2x">
-              <!-- 1x: 270px; 2x: 540px -->
-              <source media="(max-width: 1023px)" srcset="img/content/road-bike-tablet@1x.jpg 1x, img/content/road-bike-tablet@2x.jpg 2x">
               <!-- 1x: 342px; 2x: 684px -->
-              <img class="categories__img" src="./img/content/road-bike-desktop@1x.jpg" srcset="./img/content/road-bike-desktop@2x.jpg 2x" alt="Дорожный велосипед" width="342" height="503">
+              <img src="./img/content/road-bike-desktop@1x.jpg" srcset="./img/content/road-bike-desktop@2x.jpg 2x" alt="Дорожный велосипед" width="342" height="503">
             </picture>
             Дорожный велосипед
           </a>
         </li>
-        <li class="categories__item">
-          <a href="#" class="categories__link">
+        <li>
+          <a href="#">
             <picture>
-              <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/mountain-bike-tablet@1x.webp 1x, img/content/mountain-bike-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/content/mountain-bike-desktop@1x.webp 1x, img/content/mountain-bike-desktop@2x.webp 2x">
-              <!-- 1x: 270px; 2x: 540px -->
-              <source media="(max-width: 1023px)" srcset="img/content/mountain-bike-tablet@1x.jpg 1x, img/content/mountain-bike-tablet@2x.jpg 2x">
               <!-- 1x: 342px; 2x: 684px -->
-              <img class="categories__img" src="./img/content/mountain-bike-desktop@1x.jpg" srcset="./img/content/mountain-bike-desktop@2x.jpg 2x" alt="Горный велосипед" width="342" height="503">
+              <img src="./img/content/mountain-bike-desktop@1x.jpg" srcset="./img/content/mountain-bike-desktop@2x.jpg 2x" alt="Горный велосипед" width="342" height="503">
             </picture>
             Горный велосипед
           </a>
         </li>
-        <li class="categories__item">
-          <a href="#" class="categories__link">
+        <li>
+          <a href="#">
             <picture>
-              <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/child-bike-tablet@1x.webp 1x, img/content/child-bike-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/content/child-bike-desktop@1x.webp 1x, img/content/child-bike-desktop@2x.webp 2x">
-              <!-- 1x: 270px; 2x: 540px -->
-              <source media="(max-width: 1023px)" srcset="img/content/child-bike-tablet@1x.jpg 1x, img/content/child-bike-tablet@2x.jpg 2x">
               <!-- 1x: 342px; 2x: 684px -->
-              <img class="categories__img" src="./img/content/child-bike-desktop@1x.jpg" srcset="./img/content/child-bike-desktop@2x.jpg 2x" alt="Детский велосипед" width="342" height="503">
+              <img src="./img/content/child-bike-desktop@1x.jpg" srcset="./img/content/child-bike-desktop@2x.jpg 2x" alt="Детский велосипед" width="342" height="503">
             </picture>
             Детский велосипед
           </a>
@@ -129,10 +109,9 @@
       <p class="video__description">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
       <div class="video__popup">
         <a class="video__link" href="https://www.youtube.com/watch?v=5qap5aO4i9A">
-          <svg class="video__play" width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M32.5 65C50.4493 65 65 50.4493 65 32.5C65 14.5507 50.4493 0 32.5 0C14.5507 0 0 14.5507 0 32.5C0 50.4493 14.5507 65 32.5 65Z" fill="#0AD9C6"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M28.6001 23.3999L41.6001 32.4999L28.6001 41.5999V23.3999Z" fill="#070707"/>
-            </svg>
+          <svg class="video__play" width="65" height="65">
+            <use xlink:href="img/sprite.svg#play"></use>
+          </svg>
         </a>
       </div>
     </section>
@@ -140,9 +119,7 @@
   <footer class="page-footer contacts" id="contacts">
     <h2 class="contacts__title title">Как нас найти?</h2>
     <p class="contacts__description">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
-    <iframe class="contacts__map-wrapper"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7545.233748484696!2d30.328621969627402!3d59.94086750600491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.      1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1643712978594!5m2!1sru!2sru"
-      width="957" height="530" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+    <iframe class="contacts__map-wrapper" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7545.233748484696!2d30.328621969627402!3d59.94086750600491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1643712978594!5m2!1sru!2sru" width="957" height="530" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
     </iframe>
     <ul class="contacts__list list-reset">
       <li class="contacts__item">
