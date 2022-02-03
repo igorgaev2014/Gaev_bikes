@@ -16,7 +16,7 @@
   }
 }
 
-.form__description {
+.form p {
   margin: 0;
   padding-top: 6px;
   font-size: 17px;
@@ -38,7 +38,7 @@
   }
 }
 
-.form__item {
+.form li {
   margin-bottom: 20px;
 
   @media (max-width: $desktop-width) {
@@ -90,7 +90,7 @@
   outline: 2px solid $status-error;
 }
 
-.form__button {
+.form button {
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 47px;

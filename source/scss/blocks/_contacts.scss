@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.contacts__title {
+.contacts h2 {
   color: $special-black;
   margin-bottom: 30px;
 
@@ -15,7 +15,7 @@
   }
 }
 
-.contacts__description {
+.contacts p {
   font-size: 17px;
   line-height: 31px;
   font-weight: 400;
@@ -36,7 +36,7 @@
   }
 }
 
-.contacts__list {
+.contacts ul {
   font-size: 16px;
   line-height: 32px;
   font-weight: 400;
@@ -56,13 +56,13 @@
   }
 }
 
-.contacts__item {
+.contacts li {
   @media (max-width: $tablet-width) {
     margin-bottom: 15px;
   }
 }
 
-.contacts__item:first-child {
+.contacts li:first-child {
   margin-left: 20px;
   margin-right: 77px;
 
@@ -100,9 +100,9 @@
   padding-right: 12px;
   background-image: url("../img/mail.svg");
 
-  @media (max-width:$tablet-width) {
+  @media (max-width: $tablet-width) {
     padding-left: 44px;
-    padding-right: 0px;
+    padding-right: 0;
     background-position: 4px 0;
   }
 }
