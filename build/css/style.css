@@ -283,6 +283,10 @@ img {
   }
 }
 
+.main-nav--opened + .page-header__info + .page-header__form {
+  display: none;
+}
+
 @media (max-width: 1023px) {
   .body--no-js .main-nav__list {
     display: flex;

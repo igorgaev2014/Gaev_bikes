@@ -52,6 +52,10 @@
   }
 }
 
+.main-nav--opened + .page-header__info + .page-header__form {
+  display: none;
+}
+
 .body--no-js .main-nav__list {
   @media (max-width: $desktop-width) {
     display: flex;
