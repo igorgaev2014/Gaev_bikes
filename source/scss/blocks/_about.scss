@@ -29,6 +29,10 @@
     margin-bottom: 31px;
     letter-spacing: 0.01px;
   }
+
+  @media (max-width:$mobile-width) {
+    margin-bottom: 26px;
+  }
 }
 
 .about ul {

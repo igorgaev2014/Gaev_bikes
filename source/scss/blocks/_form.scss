@@ -8,7 +8,7 @@
 
   @media (max-width: $desktop-width) {
     margin: 0;
-    padding: 0 224px;
+    padding: 0 223px;
     max-width: none;
   }
 
@@ -30,7 +30,6 @@
     margin-bottom: 29px;
     color: $basic-black;
     letter-spacing: 0.5px;
-    max-width: 321px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -83,7 +82,6 @@
   }
 
   @media (max-width: $tablet-width) {
-    max-width: 320px;
     padding-left: 23px;
     padding-top: 13px;
     padding-bottom: 11px;
@@ -123,7 +121,6 @@
     letter-spacing: 0;
     padding-left: 46px;
     padding-right: 43px;
-    margin-left: 3px;
   }
 
   @media (max-width: $tablet-width) {
@@ -133,8 +130,6 @@
     padding-left: 28px;
     padding-right: 31px;
     padding-bottom: 16px;
-    //max-width: 286px;
-    max-width: 320px;
     margin: 0 auto;
   }
 }

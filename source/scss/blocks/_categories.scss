@@ -17,6 +17,7 @@
   }
 }
 
+
 .categories h2 {
   color: $special-black;
   margin-bottom: 61px;
@@ -56,20 +57,61 @@
   letter-spacing: -0.5px;
   display: flex;
   flex-direction: column;
+  z-index: 20;
 }
 
 .categories img {
-  margin-bottom: 13px;
-  z-index: 18;
   position: relative;
   width: 100%;
-  border-radius: 10px;
 
   @media (max-width: $desktop-width) {
-    width: 100%;
+    display: none;
+  }
+}
+
+.img-wrapper {
+  border-radius: 10px;
+  margin-bottom: 11px;
+  z-index: 18;
+  align-self: center;
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 21px;
+    width: 270px;
     height: 300px;
-    object-fit: cover;
-    object-position: center 55%;
+  }
+}
+
+.img-wrapper--child {
+  @media (max-width: $desktop-width) {
+    background: url('../img/content/child-bike-tablet@1x.jpg');
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/content/child-bike-tablet@2x.jpg");
+      background-size: cover;
+    }
+  }
+}
+
+.img-wrapper--mountain {
+  @media (max-width: $desktop-width) {
+    background: url('../img/content/mountain-bike-tablet@1x.jpg');
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/content/mountain-bike-tablet@2x.jpg");
+      background-size: cover;
+    }
+  }
+}
+
+.img-wrapper--road {
+  @media (max-width: $desktop-width) {
+    background: url('../img/content/road-bike-tablet@1x.jpg');
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/content/road-bike-tablet@2x.jpg");
+      background-size: cover;
+    }
   }
 }
 
@@ -90,6 +132,7 @@
 
   @media (max-width: $desktop-width) {
     margin-bottom: 58px;
+    max-width: 270px;
   }
 
   @media (max-width: $tablet-width) {
@@ -97,7 +140,7 @@
   }
 }
 
-.categories li:first-child {
+.categories li:nth-child(3n-2) {
   &::before {
     content: "";
     position: absolute;
@@ -136,7 +179,7 @@
   }
 }
 
-.categories li:nth-child(2n) {
+.categories li:nth-child(3n+2) {
   margin-top: 29px;
 
   @media (max-width: $desktop-width) {

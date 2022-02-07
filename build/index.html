@@ -6,6 +6,7 @@
   <meta name="description" content="Bikes">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Велосипеды</title>
+  <link rel="shortcut icon" href="#">
   <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/OpenSans-Light.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" crossorigin="anonymous">
@@ -75,31 +76,37 @@
       <ul class="list-reset">
         <li>
           <a href="#">
-            <picture>
-              <source type="image/webp" srcset="img/content/road-bike-desktop@1x.webp 1x, img/content/road-bike-desktop@2x.webp 2x">
-              <!-- 1x: 342px; 2x: 684px -->
-              <img src="img/content/road-bike-desktop@1x.jpg" srcset="img/content/road-bike-desktop@2x.jpg 2x" alt="Дорожный велосипед" width="342" height="503">
-            </picture>
+            <div class="img-wrapper img-wrapper--road">
+              <picture>
+                <source type="image/webp" srcset="img/content/road-bike-desktop@1x.webp 1x, img/content/road-bike-desktop@2x.webp 2x">
+                <!-- 1x: 342px; 2x: 684px -->
+                <img src="img/content/road-bike-desktop@1x.jpg" srcset="img/content/road-bike-desktop@2x.jpg 2x" alt="Дорожный велосипед" width="342" height="503">
+              </picture>
+            </div>
             Дорожный велосипед
           </a>
         </li>
         <li>
           <a href="#">
-            <picture>
-              <source type="image/webp" srcset="img/content/mountain-bike-desktop@1x.webp 1x, img/content/mountain-bike-desktop@2x.webp 2x">
-              <!-- 1x: 342px; 2x: 684px -->
-              <img src="img/content/mountain-bike-desktop@1x.jpg" srcset="img/content/mountain-bike-desktop@2x.jpg 2x" alt="Горный велосипед" width="342" height="503">
-            </picture>
+            <div class="img-wrapper img-wrapper--mountain">
+              <picture>
+                <source type="image/webp" srcset="img/content/mountain-bike-desktop@1x.webp 1x, img/content/mountain-bike-desktop@2x.webp 2x">
+                <!-- 1x: 342px; 2x: 684px -->
+                <img src="img/content/mountain-bike-desktop@1x.jpg" srcset="img/content/mountain-bike-desktop@2x.jpg 2x" alt="Горный велосипед" width="342" height="503">
+              </picture>
+            </div>
             Горный велосипед
           </a>
         </li>
         <li>
           <a href="#">
-            <picture>
-              <source type="image/webp" srcset="img/content/child-bike-desktop@1x.webp 1x, img/content/child-bike-desktop@2x.webp 2x">
-              <!-- 1x: 342px; 2x: 684px -->
-              <img src="img/content/child-bike-desktop@1x.jpg" srcset="img/content/child-bike-desktop@2x.jpg 2x" alt="Детский велосипед" width="342" height="503">
-            </picture>
+            <div class="img-wrapper img-wrapper--child">
+              <picture>
+                <source type="image/webp" srcset="img/content/child-bike-desktop@1x.webp 1x, img/content/child-bike-desktop@2x.webp 2x">
+                <!-- 1x: 342px; 2x: 684px -->
+                <img src="img/content/child-bike-desktop@1x.jpg" srcset="img/content/child-bike-desktop@2x.jpg 2x" alt="Детский велосипед" width="342" height="503">
+              </picture>
+            </div>
             Детский велосипед
           </a>
         </li>
@@ -110,6 +117,11 @@
       <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
       <div class="video__popup">
         <a class="video__link" href="https://www.youtube.com/watch?v=5qap5aO4i9A">
+          <picture>
+            <source type="image/webp" srcset="img/bike-video@1x.webp 1x, img/bike-video@2x.webp 2x">
+            <!-- 1x: 929px; 2x: 1858px -->
+            <img src="img/bike-video@1x.jpg" alt="bike-video" width="929" height="522" srcset="img/bike-video@2x.jpg 2x">
+          </picture>
           <svg class="video__play" width="65" height="65" viewBox="0 0 65 65">
             <use xlink:href="img/sprite.svg#play"></use>
           </svg>

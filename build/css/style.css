@@ -414,7 +414,7 @@ img {
 @media (max-width: 1023px) {
   .form {
     margin: 0;
-    padding: 0 224px;
+    padding: 0 223px;
     max-width: none;
   }
 }
@@ -438,7 +438,6 @@ img {
     margin-bottom: 29px;
     color: #000000;
     letter-spacing: 0.5px;
-    max-width: 321px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -494,7 +493,6 @@ img {
 }
 @media (max-width: 767px) {
   .form input {
-    max-width: 320px;
     padding-left: 23px;
     padding-top: 13px;
     padding-bottom: 11px;
@@ -533,7 +531,6 @@ img {
     letter-spacing: 0;
     padding-left: 46px;
     padding-right: 43px;
-    margin-left: 3px;
   }
 }
 @media (max-width: 767px) {
@@ -544,7 +541,6 @@ img {
     padding-left: 28px;
     padding-right: 31px;
     padding-bottom: 16px;
-    max-width: 320px;
     margin: 0 auto;
   }
 }
@@ -804,6 +800,11 @@ img {
     letter-spacing: 0.01px;
   }
 }
+@media (max-width: 320px) {
+  .about h2 {
+    margin-bottom: 26px;
+  }
+}
 
 .about ul {
   display: grid;
@@ -927,21 +928,66 @@ img {
   letter-spacing: -0.5px;
   display: flex;
   flex-direction: column;
+  z-index: 20;
 }
 
 .categories img {
-  margin-bottom: 13px;
-  z-index: 18;
   position: relative;
   width: 100%;
-  border-radius: 10px;
 }
 @media (max-width: 1023px) {
   .categories img {
-    width: 100%;
+    display: none;
+  }
+}
+
+.img-wrapper {
+  border-radius: 10px;
+  margin-bottom: 11px;
+  z-index: 18;
+  align-self: center;
+}
+@media (max-width: 1023px) {
+  .img-wrapper {
+    margin-bottom: 21px;
+    width: 270px;
     height: 300px;
-    object-fit: cover;
-    object-position: center 55%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .img-wrapper--child {
+    background: url("../img/content/child-bike-tablet@1x.jpg");
+  }
+}
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (min-resolution: 2dppx) {
+  .img-wrapper--child {
+    background: url("../img/content/child-bike-tablet@2x.jpg");
+    background-size: cover;
+  }
+}
+
+@media (max-width: 1023px) {
+  .img-wrapper--mountain {
+    background: url("../img/content/mountain-bike-tablet@1x.jpg");
+  }
+}
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (min-resolution: 2dppx) {
+  .img-wrapper--mountain {
+    background: url("../img/content/mountain-bike-tablet@2x.jpg");
+    background-size: cover;
+  }
+}
+
+@media (max-width: 1023px) {
+  .img-wrapper--road {
+    background: url("../img/content/road-bike-tablet@1x.jpg");
+  }
+}
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (min-resolution: 2dppx) {
+  .img-wrapper--road {
+    background: url("../img/content/road-bike-tablet@2x.jpg");
+    background-size: cover;
   }
 }
 
@@ -961,6 +1007,7 @@ img {
 @media (max-width: 1023px) {
   .categories li {
     margin-bottom: 58px;
+    max-width: 270px;
   }
 }
 @media (max-width: 767px) {
@@ -969,7 +1016,7 @@ img {
   }
 }
 
-.categories li:first-child::before {
+.categories li:nth-child(3n-2)::before {
   content: "";
   position: absolute;
   z-index: 16;
@@ -982,7 +1029,7 @@ img {
   background-color: transparent;
 }
 @media (max-width: 1023px) {
-  .categories li:first-child::before {
+  .categories li:nth-child(3n-2)::before {
     width: 127px;
     height: 127px;
     border: 18px solid #0ad9c6;
@@ -991,7 +1038,7 @@ img {
   }
 }
 @media (max-width: 767px) {
-  .categories li:first-child::before {
+  .categories li:nth-child(3n-2)::before {
     top: 201px;
     left: -25px;
   }
@@ -1009,20 +1056,20 @@ img {
   }
 }
 
-.categories li:nth-child(2n) {
+.categories li:nth-child(3n+2) {
   margin-top: 29px;
 }
 @media (max-width: 1023px) {
-  .categories li:nth-child(2n) {
+  .categories li:nth-child(3n+2) {
     margin: 0;
   }
 }
 @media (max-width: 767px) {
-  .categories li:nth-child(2n) {
+  .categories li:nth-child(3n+2) {
     margin-bottom: 40px;
   }
 }
-.categories li:nth-child(2n)::before, .categories li:nth-child(2n)::after {
+.categories li:nth-child(3n+2)::before, .categories li:nth-child(3n+2)::after {
   content: "";
   position: absolute;
   z-index: 19;
@@ -1032,15 +1079,15 @@ img {
   background-color: transparent;
 }
 @media (max-width: 1023px) {
-  .categories li:nth-child(2n)::before, .categories li:nth-child(2n)::after {
+  .categories li:nth-child(3n+2)::before, .categories li:nth-child(3n+2)::after {
     display: none;
   }
 }
-.categories li:nth-child(2n)::before {
+.categories li:nth-child(3n+2)::before {
   top: -17px;
   left: -18px;
 }
-.categories li:nth-child(2n)::after {
+.categories li:nth-child(3n+2)::after {
   bottom: 31px;
   right: -24px;
   background-color: transparent;
@@ -1133,7 +1180,7 @@ img {
   .video p {
     padding-left: 15px;
     padding-right: 15px;
-    margin-bottom: 56px;
+    margin-bottom: 50px;
   }
 }
 
@@ -1143,17 +1190,8 @@ img {
   width: 929px;
   height: 522px;
   background-color: #000000;
-  background-image: url("../img/bike-video@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
   align-items: center;
   justify-content: center;
-}
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-  .video__popup {
-    background-image: url("../img/bike-video@2x.jpg");
-  }
 }
 @media (max-width: 1023px) {
   .video__popup {
@@ -1163,13 +1201,16 @@ img {
 }
 @media (max-width: 767px) {
   .video__popup {
-    width: 288px;
-    height: 161px;
+    min-width: 288px;
+    min-height: 161px;
+    width: calc(100% - 40px);
+    height: auto;
   }
 }
 
 .video__link {
   cursor: pointer;
+  position: relative;
 }
 
 .video__play {
@@ -1177,6 +1218,10 @@ img {
   height: 65px;
   margin-top: 6px;
   display: inline-block;
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .video__play:hover {
   opacity: 0.9;
@@ -1189,6 +1234,7 @@ img {
     width: 90px;
     height: 90px;
     margin-top: 6px;
+    top: 48%;
   }
 }
 @media (max-width: 767px) {
