@@ -1172,24 +1172,27 @@ img {
   cursor: pointer;
 }
 
-.video svg {
+.video__play {
+  width: 65px;
+  height: 65px;
   margin-top: 6px;
+  display: inline-block;
 }
-.video svg:hover {
+.video__play:hover {
   opacity: 0.9;
 }
-.video svg:active {
+.video__play:active {
   opacity: 0.8;
 }
 @media (max-width: 1023px) {
-  .video svg {
+  .video__play {
     width: 90px;
     height: 90px;
     margin-top: 6px;
   }
 }
 @media (max-width: 767px) {
-  .video svg {
+  .video__play {
     width: 65px;
     height: 65px;
     margin-top: 3px;
