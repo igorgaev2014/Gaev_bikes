@@ -204,7 +204,7 @@ img {
   }
 }
 
-.page-header p {
+.page-header__info p {
   max-width: 381px;
   font-size: 20px;
   line-height: 32px;
@@ -212,7 +212,7 @@ img {
   opacity: 0.8;
 }
 @media (max-width: 1023px) {
-  .page-header p {
+  .page-header__info p {
     margin: 0 auto;
     text-align: center;
     max-width: 435px;
@@ -221,7 +221,7 @@ img {
   }
 }
 @media (max-width: 767px) {
-  .page-header p {
+  .page-header__info p {
     padding: 0 15px;
     margin-bottom: 69px;
   }
@@ -409,8 +409,9 @@ img {
 }
 @media (max-width: 1023px) {
   .form {
-    margin: 0 auto;
-    padding-top: 0;
+    margin: 0;
+    padding: 0 224px;
+    max-width: none;
   }
 }
 @media (max-width: 767px) {
@@ -433,6 +434,9 @@ img {
     margin-bottom: 29px;
     color: #000000;
     letter-spacing: 0.5px;
+    max-width: 321px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (max-width: 767px) {
@@ -477,8 +481,8 @@ img {
 }
 @media (max-width: 1023px) {
   .form input {
+    max-width: none;
     border: 1px solid #c9ccd4;
-    max-width: 320px;
     padding-left: 19px;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -486,6 +490,7 @@ img {
 }
 @media (max-width: 767px) {
   .form input {
+    max-width: 320px;
     padding-left: 23px;
     padding-top: 13px;
     padding-bottom: 11px;
@@ -520,7 +525,6 @@ img {
 }
 @media (max-width: 1023px) {
   .form button {
-    max-width: 320px;
     margin-top: 1px;
     letter-spacing: 0;
     padding-left: 46px;
@@ -536,7 +540,8 @@ img {
     padding-left: 28px;
     padding-right: 31px;
     padding-bottom: 16px;
-    max-width: 286px;
+    max-width: 320px;
+    margin: 0 auto;
   }
 }
 
@@ -642,6 +647,7 @@ img {
   flex-direction: row;
   justify-content: center;
   padding-top: 4px;
+  flex-wrap: wrap;
 }
 @media (max-width: 1023px) {
   .contacts ul {
@@ -1162,24 +1168,24 @@ img {
   cursor: pointer;
 }
 
-.video__play {
+.video svg {
   margin-top: 6px;
 }
-.video__play:hover {
+.video svg:hover {
   opacity: 0.9;
 }
-.video__play:active {
+.video svg:active {
   opacity: 0.8;
 }
 @media (max-width: 1023px) {
-  .video__play {
+  .video svg {
     width: 90px;
     height: 90px;
     margin-top: 6px;
   }
 }
 @media (max-width: 767px) {
-  .video__play {
+  .video svg {
     width: 65px;
     height: 65px;
     margin-top: 3px;

@@ -4,7 +4,7 @@ const navButton = nav.querySelector('.main-nav__button');
 const navList = nav.querySelector('.main-nav__list');
 const phoneInput = document.querySelector('input[type="tel"]');
 
-body.classList.remove('body--no-js');
+body.classList.remove('no-js');
 
 function openMenu () {
   nav.classList.remove('main-nav--closed');
